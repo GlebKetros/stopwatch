@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body {
+  color: #fff;
+}
+
+.page {
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #0085e4, #00b9cc, #00c9a7);
+}
+
+.container {
+  padding: 20vh 0 0;
+}
+
+.stopwatch {
+  margin: auto;
+  padding: 10px;
+  max-width: 420px;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+
+.stopwatch-screen__time {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  font-size: 4rem;
+}
+
+.stopwatch-screen__item {
+  margin: 0;
+}
+
+.stopwatch-buttons__box {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 20px;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 2px;
+  background-color: rgba(181, 197, 181, 0.274);
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(109, 109, 109, 0.274);
+}
+
+.stopwatch-loops {
+  padding: 0 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.stopwatch-loops::-webkit-scrollbar {
+  width: 8px;
+}
+
+.stopwatch-loops::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.stopwatch-loops::-webkit-scrollbar-thumb {
+  background-color: rgb(169, 169, 169);
+  outline: 1px solid slategrey;
+}
+
+.loop {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 15px;
+  font-size: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 480px) {
+  .stopwatch {
+    max-width: 320px;
+  }
+  .stopwatch-screen__time {
+    padding: 10px 50px;
+    font-size: 3rem;
+  }
+  .btn {
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 380px) {
+  .stopwatch {
+    max-width: 280px;
+  }
+  .stopwatch-screen__time {
+    padding: 10px 50px;
+    font-size: 2rem;
+  }
+  .stopwatch-loops {
+    padding: 0 10px;
+  }
+  .loop {
+    font-size: 14px;
+  }
+}
+@media (max-height: 600px) {
+  .container {
+    padding: 15vh 0 0;
+  }
+  .stopwatch {
+    max-width: 340px;
+  }
+  .btn {
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+  }
+  .stopwatch-screen__time {
+    padding: 10px 50px;
+    font-size: 3rem;
+  }
+  .stopwatch-loops {
+    max-height: 200px;
+  }
+}
+@media (max-height: 550px) {
+  .container {
+    padding: 30px;
+  }
+  .stopwatch {
+    max-width: 280px;
+  }
+  .stopwatch-screen__time {
+    padding: 10px 50px 0;
+    font-size: 2rem;
+  }
+  .stopwatch-loops {
+    max-height: 200px;
+  }
+  .loop {
+    padding: 3px 0 10px;
+    font-size: 12px;
+  }
+}
+@media (max-height: 420px) {
+  .btn {
+    margin: 5px 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+  }
+  .stopwatch-loops {
+    max-height: 100px;
+  }
+}
